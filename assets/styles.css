@@ -1,0 +1,250 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--paper);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.navbar {
+    background: rgba(251, 250, 247, 0.94);
+    border-bottom: 1px solid rgba(23, 32, 38, 0.08);
+
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link:hover{
+    font-weight: 600;
+    color: rgb(83, 75, 38);
+}
+
+.intro-section {
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(135deg, rgba(251, 250, 247, 0.655), rgba(251, 250, 247, 0.55)),
+        url("background.jpg") center / cover;
+}
+
+.intro-title, .panel-label {
+    color: rgba(83, 75, 38, 0.816);
+    font-size: 10pt;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 35pt;
+}
+
+h2, h3, h4 {
+    font-weight: bold;
+}
+
+.intro-text {
+    color: rgba(74, 97, 91, 0.772);
+    font-weight: bold;
+    font-size: 15pt;
+    max-width: 650px;
+}
+
+.skill-tags {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.skill-tags span {
+    padding: 10px 22px;
+    border: 2px solid #837538;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+}
+
+.picture-panel {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(23, 32, 38, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.208);
+    padding: 24px;
+    margin-top: 50px;
+}
+
+.panel-image{
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    background:
+        linear-gradient(135deg,rgba(131, 117, 56, 0.599),rgba(155, 142, 92, 0.598)),
+        url("set-up.jpg") center / cover;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+
+}
+
+.process-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    background:
+        linear-gradient(135deg,rgba(47, 72, 61, 0.6),rgba(74, 97, 91, 0.6)),
+        url("process.jpg") center / cover;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+}
+
+
+.work-button {
+    display: inline-flex;
+    align-items: center;
+    
+    background-color: rgb(74, 97, 91);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+
+    border-radius: 999px;
+    margin-left: 140px;
+    gap: 10px;
+    padding: 10px 24px;
+}
+
+.work-button:hover {
+    background-color: rgb(47, 72, 61);
+    transform: translateY(-2px);
+}
+
+.about-grid-section {
+    width: 90%;
+    margin: 120px auto;
+    background-color: #17202add;
+    border-radius: 32px;
+    padding: 40px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 28px;
+}
+
+.grid-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 28px;
+    padding: 28px;
+    overflow: hidden;
+}
+
+.intro-card {
+    grid-row: span 2;
+}
+
+.grid-card p {
+    color: rgba(74, 97, 91, 0.772);
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+.grid-card:hover, .case-card:hover {
+    transform: translateY(-5px);
+}
+
+.process-section {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.7)),
+        url("background2.jpg") center / cover;
+
+
+}
+
+.grid-card i {
+    color: rgb(155, 142, 92);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.case-card {
+    min-height: 450px;
+    border-radius: 10px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.408);
+}
+
+.case-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.75) 0%,
+        rgba(0,0,0,0.35) 45%,
+        rgba(0,0,0,0.05) 100%
+  );
+    z-index: 1;
+}
+
+
+.service-image {
+    background-image: url("service.jpg");
+    
+}
+
+.game-image {
+    background-image: url("memory.jpg");
+
+}
+
+.ecommerce-image {
+    background-image: url("ecommerce.jpg");
+
+}
+
+.analytics-image {
+    background-image: url("analytics.jpg");
+
+}
+
+.case-content {
+  position: relative;
+  z-index: 2;
+}
+
+.case-content p {
+    color: #579a7c;
+    font-weight: bold;
+    
+}
+
+.case-content h3, .case-content span {
+    color: white;
+
+}
+
+
+
+
