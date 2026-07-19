@@ -19,10 +19,12 @@ body {
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.nav-link:hover{
+.nav-link {
     font-weight: 600;
-    color: rgb(83, 75, 38);
+    
+}
+.nav-link:hover{
+    color: rgb(155, 136, 54);
 }
 
 .intro-section {
@@ -112,21 +114,22 @@ h2, h3, h4 {
 .work-button {
     display: inline-flex;
     align-items: center;
-    
     background-color: rgb(74, 97, 91);
     color: white;
     font-weight: 600;
     text-decoration: none;
-
     border-radius: 999px;
     margin-left: 140px;
     gap: 10px;
     padding: 10px 24px;
+    transition: 0.3s;
+
 }
 
 .work-button:hover {
     background-color: rgb(47, 72, 61);
     transform: translateY(-2px);
+    transition: 0.3s;
 }
 
 .about-grid-section {
@@ -147,6 +150,7 @@ h2, h3, h4 {
     border-radius: 28px;
     padding: 28px;
     overflow: hidden;
+    transition: 0.3s;
 }
 
 .intro-card {
@@ -160,11 +164,12 @@ h2, h3, h4 {
 }
 
 .grid-card:hover, .case-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    transition: 0.3s;
 }
 
 .process-section {
-    min-height: 650px;
+    min-height: 700px;
     display: flex;
     align-items: center;
     background:
@@ -172,6 +177,32 @@ h2, h3, h4 {
         url("background2.jpg") center / cover;
 
 
+}
+
+.storyboard-links {
+    display: flex;
+    gap: 32px;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.storyboard-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background-color: rgb(74, 97, 91);
+    color: white;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.storyboard-button:hover {
+    background-color: rgb(47, 72, 61);
+    transform: translateY(-2px);
+    transition: 0.3s;
 }
 
 .grid-card i {
@@ -192,7 +223,8 @@ h2, h3, h4 {
     text-decoration: none;
     background-size: cover;
     background-position: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.408);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.75);
+    transition: 0.3s;
 }
 
 .case-card::before {
@@ -201,8 +233,8 @@ h2, h3, h4 {
     inset: 0;
     background: linear-gradient(
         to top,
-        rgba(0,0,0,0.75) 0%,
-        rgba(0,0,0,0.35) 45%,
+        rgba(0,0,0,0.75) 10%,
+        rgba(0, 0, 0, 0.25) 50%,
         rgba(0,0,0,0.05) 100%
   );
     z-index: 1;
@@ -235,7 +267,7 @@ h2, h3, h4 {
 }
 
 .case-content p {
-    color: #579a7c;
+    color: #e2d633;
     font-weight: bold;
     
 }
